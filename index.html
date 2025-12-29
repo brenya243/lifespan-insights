@@ -1,0 +1,147 @@
+<!-- ICI NOTRE CODE HTML POUR LE PROJET LifeSpan INSIGHTS -->
+<!-- ==============================
+LIFESPAN INSIGHTS – HTML5
+Version: 1.0
+Auteur : Brenya Sonabo - BS3 DIGITAL
+Police : Poppins (Google Fonts)
+==============================  -->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LifeSpan Insights, une perspective unique sur votre parcours temporel."
+    />
+    <!-- ==== IMPORT DE LA POLICE ====  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>LifeSpan Insights</title>
+  </head>
+  <body>
+    <!-- IMAGE DE FOND AVEC SUPERPOSITION -->
+    <div class="background">
+      <div class="overlay"></div>
+
+      <div class="container">
+        <!-- CONTENEUR PRINCIPAL -->
+
+        <!-- ENTETE DU PROJET -->
+        <header class="header">
+          <h1 class="app-title"><a href="/index.html">LifeSpan INSIGHTS</a></h1>
+          <p class="byline">By Brenya Sonabo</p>
+        </header>
+
+        <!-- SECTION PRINCIPALE -->
+        <main class="main-content">
+          <!-- COLONNE GAUCHE - TEXTE D'ACCROCHE ET FORMULAIRE D'ENTREE -->
+          <section class="input-section">
+            <h2 class="subtitle">
+              Une perspective unique sur votre parcours temporel.
+            </h2>
+            <p class="hook-text">
+              Combien de jours avez-vous marché sur Terre? Quand reviendra votre
+              prochain anniversaire? Quel sera votre âge en 2050?<br />
+              LifeSpan INSIGHTS vous le dit – avec JUSTESSE et FINESSE.
+            </p>
+            <h2 class="section-title">Entrez vos informations</h2>
+
+            <!-- FORMULAIRE D'ENTREE ICI -->
+            <form action="#" id="lifespan-form" novalidate>
+              <div class="form-group">
+                <label for="user-name">Votre nom</label>
+                <input
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  placeholder="Ex. Brenya Sonabo"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="birthdate">Votre date de naissance</label>
+                <input
+                  type="date"
+                  id="birthdate"
+                  name="birthdate"
+                  placeholder="Ex. 19-05-1990"
+                  required
+                />
+              </div>
+              <div class="sub-btn">
+                <button type="submit" class="submit-btn">
+                  Generer mes insights
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <!-- COLONNE DROITE - LA ZONE D'AFFICHAGE DES RESULTATS -->
+          <section class="output">
+            <div class="output-container">
+              <h2 class="section-title">Votre profil temporel</h2>
+
+              <!-- 1.NOM -->
+              <div class="result-item">
+                <div class="result-label">Nom</div>
+                <div class="result-value" id="display-name">-</div>
+              </div>
+              <!-- 2.Âge actuel -->
+              <div class="result-item">
+                <div class="result-label">Âge actuel (Années, mois, jours)</div>
+                <div class="result-value" id="current-age">-</div>
+              </div>
+              <!-- 3.Nombre totalde jours vécus -->
+              <div class="result-item">
+                <div class="result-label">Nombre total de jours vécus</div>
+                <div class="result-value" id="total-days">-</div>
+              </div>
+              <!-- 4.Nombre total de décennies vécues -->
+              <div class="result-item">
+                <div class="result-label">Nombre de décennies vécues</div>
+                <div class="result-value" id="decades-lived">-</div>
+              </div>
+              <!-- 5.Prochain anniversaire -->
+              <div class="result-item">
+                <div class="result-label">
+                  Prochain anniversaire (Jours restants)
+                </div>
+                <div class="result-value" id="next-birthday">-</div>
+              </div>
+              <!-- 6.Âge en 2050 -->
+              <div class="result-item">
+                <div class="result-label">
+                  Âge en 2050 (Nombres de jours jusqu'en 2050)
+                </div>
+                <div class="result-value" id="age-in-2050">-</div>
+              </div>
+              <!-- 7.Signe astrologique -->
+              <div class="result-item">
+                <div class="result-label">Signe astrologique</div>
+                <div class="result-value" id="zodiac-sign">-</div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- PIED DE PAGE -->
+        <footer class="footer">
+          <p>
+            &copy; 2025 BS3 Digital. |
+            <a href="/apropos.html">Concernant le projet LifeSpan INSIGHTS</a>
+          </p>
+        </footer>
+      </div>
+      <!-- FIN CONTENEUR PRINCIPAL -->
+    </div>
+    <!-- FIN IMAGE DE FOND AVEC SUPERPOSITION -->
+    <script src="/script.js" defer></script>
+  </body>
+</html>
